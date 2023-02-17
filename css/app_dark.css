@@ -1,0 +1,75 @@
+body{
+    background-color: #282A3A;
+}
+header{
+    background-color: #161821;
+}
+div.collapse ul li a{
+    color: #F1D76D;
+}
+div.collapse {
+    padding-right: 50px;
+}
+
+/* The switch - the box around the slider */
+.change-theme {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.change-theme input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider-theme {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider-theme:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(0, 0, 0);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider-theme {
+    background-color: #ffffff;
+}
+
+input:focus+.slider-theme {
+    box-shadow: 0 0 1px #ffffff;
+}
+
+input:checked+.slider-theme:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider-theme {
+    border-radius: 34px;
+}
+
+.slider-theme:before {
+    border-radius: 50%;
+}
